@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/val"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ace_2"
+    android:alpha="0.8"
+    tools:context=".ScoreBoard">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="347dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginLeft="183dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
+        android:layout_marginBottom="688dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="SCORE BOARD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="595dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="sans-serif-black"
+        android:text="UPDATE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/s1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/scores"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/s2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/scores"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/s3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/scores"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:textColor="#FDFDFD" />
+
+        <EditText
+            android:id="@+id/s4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/scores"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:textColor="#FAFBFB" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#AEF1B1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/p2"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#AEF1B1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/p3"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#AEF1B1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/p4"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#AEF1B1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/p11"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#F7FBF7"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/p21"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FCFFFC"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/p31"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#F5F8F6"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/p41"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="418dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="102dp"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/listview2"
+            android:layout_width="102dp"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/listview3"
+            android:layout_width="104dp"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/listview4"
+            android:layout_width="102dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="55dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="3dp"
+        android:alpha="0.5"
+        android:background="@drawable/dt"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/text"
+        android:text="Print"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/update"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
